@@ -44,6 +44,7 @@ h1 {
   letter-spacing: 12px;
   text-transform: uppercase;
   padding-bottom: 8px;
+  color:black;
 }
 
 h2 {
@@ -398,7 +399,7 @@ footer {
   z-index: 1;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
-   margin: 95px;
+  margin: 95px;
   padding: 10px;
 }
 
@@ -415,7 +416,7 @@ footer {
   /*javascript used for animation-name setting*/
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
- 
+
 }
 
 .nav-btn:hover {
@@ -583,31 +584,32 @@ footer {
 }
 
 .text-center {
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .bi-patch-check-fill timeline-icon {
-font-size: 30px;
+  font-size: 30px;
 }
 
 
 #timeline {
   background: whitesmoke;
 }
+
 .timeline,
 .timeline-nodes {
   position: relative;
-  
+
 }
 
 .timeline-nodes:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.timeline h3, 
+.timeline h3,
 .timeline p {
   padding: 10px 30px;
-} 
+}
 
 .timeline h3 {
   background: var(--dark-color);
@@ -640,7 +642,7 @@ font-size: 30px;
 .timeline-nodes:nth-child(odd) .timeline-date {
   text-align: left;
 }
- 
+
 .timeline-nodes:nth-child(even) .timeline-date {
   text-align: right;
 }
@@ -657,10 +659,10 @@ font-size: 30px;
   border-bottom: 10px solid transparent;
 }
 
-.timeline-nodes h3 {
+/* .timeline-nodes h3 {
   position: relative;
   border-radius: 0.25rem 0.25rem 0 0;
-}
+} */
 
 .timeline-nodes:nth-child(even) h3::after {
   content: "";
@@ -688,9 +690,9 @@ font-size: 30px;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   z-index: 1;
 }
 
@@ -705,14 +707,15 @@ font-size: 30px;
 }
 
 .etap {
-  text-align: center !important; 
+  text-align: center !important;
 }
 
 #timeline .section-title h1 {
-  text-align: center !important; 
+  text-align: center !important;
 }
 
 @media (max-width: 767px) {
+
   .timeline-nodes:nth-child(odd) h3,
   .timeline-nodes:nth-child(odd) p {
     text-align: left;
@@ -792,6 +795,13 @@ font-size: 30px;
 
   .timeline-icon {
     line-height: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline-icons::before {
+    width: 75px;
+    height: 75px;
   }
 }
 
