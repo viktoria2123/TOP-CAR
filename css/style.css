@@ -563,7 +563,7 @@ footer {
 /*---------------------------------------
   TIMELINE               
 -----------------------------------------*/
-.roww {
+/* .roww {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -664,7 +664,7 @@ footer {
   border-radius: 0.25rem 0.25rem 0 0;
 } */
 
-.timeline-nodes:nth-child(even) h3::after {
+/* .timeline-nodes:nth-child(even) h3::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -803,7 +803,7 @@ footer {
     width: 75px;
     height: 75px;
   }
-}
+} */
 
 /*---------------------------------------
     Galllery section              
