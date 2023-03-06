@@ -95,16 +95,26 @@
 // });
 
 var swiper = new Swiper(".mySwiper", {
-	slidesPerView: 2.5,
+	slidesPerView: 3,
 	spaceBetween: 30,
 	pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	  
+		el: ".swiper-pagination",
+		clickable: true,
 	},
 	navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-  });
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	breakpoints: {
+		350: {
+			slidesPerView: 1,
+		},
+		650: {
+			slidesPerView: 1,
+		},
+		980: {
+			slidesPerView: 2,
+		},
+	}
+});
 

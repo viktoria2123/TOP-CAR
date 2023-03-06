@@ -809,54 +809,71 @@ footer {
   margin-right: auto;
 } 
 
-@media screen and (max-width: 980px) {
-  .swiper-slide img {
-    width: 70%;
-    height: auto;
+/* для экранов меньше 650 пикселей */
+@media screen and (max-width: 650px) {
+  .swiper-container {
+    width: 100%;
   }
-}
-
-@media only screen and (max-width: 767px) {
   .swiper-slide {
-    height: 300px;
-  }
-
-  .swiper-slide img {
-    height: 100%;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .swiper-slide img {
     width: 100%;
-    height: auto;
+  }
+  .swiper-pagination {
+    bottom: 10px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
   }
 }
 
-@media (max-width: 649px) {
-  .swiper-slide img {
+/* для экранов между 651 и 979 пикселей */
+@media screen and (min-width: 651px) and (max-width: 979px) {
+  .swiper-container {
     width: 100%;
-    height: auto;
+  }
+  .swiper-slide {
+    width: 45%;
+  }
+  .swiper-pagination {
+    bottom: 10px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+  .swiper-pagination-bullet {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
   }
 }
 
-@media (min-width: 650px) and (max-width: 979px) {
-  .swiper-slide img {
-    width: 70%;
-    height: auto;
+/* для экранов больше или равных 980 пикселей */
+@media screen and (min-width: 980px) {
+  .swiper-container {
+    width: 100%;
   }
-}
-
-@media (min-width: 980px) and (max-width: 1199px) {
-  .swiper-slide img {
-    width: 50%;
-    height: auto;
+  .swiper-slide {
+    width: 30%;
   }
-}
-
-@media (min-width: 1200px) {
-  .swiper-slide img {
-    width: 33.33%;
-    height: auto;
+  .swiper-pagination {
+    bottom: 10px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+  .swiper-pagination-bullet {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
   }
 }
