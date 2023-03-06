@@ -95,7 +95,7 @@
 // });
 
 var swiper = new Swiper(".mySwiper", {
-	slidesPerView: 3,
+	slidesPerView: 2.5,
 	spaceBetween: 30,
 	pagination: {
 		el: ".swiper-pagination",
@@ -113,7 +113,7 @@ var swiper = new Swiper(".mySwiper", {
 			slidesPerView: 1,
 		},
 		980: {
-			slidesPerView: 2,
+			slidesPerView: 2.5,
 		},
 	}
 });
