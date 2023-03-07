@@ -45,6 +45,7 @@ h1 {
   text-transform: uppercase;
   padding-bottom: 8px;
   color:black;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -103,7 +104,7 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
-}
+  }
 
 a:hover,
 a:active,
