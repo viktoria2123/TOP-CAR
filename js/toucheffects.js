@@ -124,23 +124,24 @@ var swiper = new Swiper(".mySwiper", {
 //   });
   
 const callBtn = document.querySelector('.call-btn');
-const image = document.querySelector('.hero-image img');
+const heroImage = document.querySelector('.hero-image');
 
 window.addEventListener('scroll', () => {
-  const imageOffsetTop = image.offsetTop;
-  const imageHeight = image.offsetHeight;
+  const heroImageOffsetTop = heroImage.offsetTop;
+  const heroImageHeight = heroImage.offsetHeight;
   const windowHeight = window.innerHeight;
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > imageOffsetTop && scrollTop < (imageOffsetTop + imageHeight - windowHeight)) {
-    const opacity = (scrollTop - imageOffsetTop) / (imageHeight - windowHeight);
-    callBtn.style.opacity = 1 - opacity;
-  } else if (scrollTop >= (imageOffsetTop + imageHeight - windowHeight)) {
+  if (scrollTop > heroImageOffsetTop && scrollTop < (heroImageOffsetTop + heroImageHeight - windowHeight)) {
+    const opacity = 1 - ((scrollTop - heroImageOffsetTop) / (heroImageHeight - windowHeight));
+    callBtn.style.opacity = opacity;
+  } else if (scrollTop >= (heroImageOffsetTop + heroImageHeight - windowHeight)) {
     callBtn.style.opacity = 0;
   } else {
     callBtn.style.opacity = 1;
   }
 });
+
 
 
   
