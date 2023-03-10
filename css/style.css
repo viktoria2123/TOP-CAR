@@ -409,7 +409,7 @@ footer {
 @media (max-width: 768px) {
   .call-btn-mobile {
     opacity: 0.8;
-    bottom: 80px;
+    bottom: 115px;
   }
 }
 
