@@ -118,3 +118,9 @@ var swiper = new Swiper(".mySwiper", {
 	}
 });
 
+// window.addEventListener("scroll", function() {
+// 	var phoneBtn = document.querySelector(".phone-btn");
+// 	phoneBtn.classList.toggle("hidden", window.scrollY > 100);
+//   });
+  
+  
