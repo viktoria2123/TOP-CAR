@@ -389,6 +389,9 @@ footer {
   background-color: #e44c65;
   color: white;
 }
+.call-btn.transparent {
+  opacity: 0.7;
+}
 
 
 

@@ -123,4 +123,20 @@ var swiper = new Swiper(".mySwiper", {
 // 	phoneBtn.classList.toggle("hidden", window.scrollY > 100);
 //   });
   
+window.addEventListener('scroll', function() {
+	const button = document.querySelector('.call-btn');
+	const images = document.querySelectorAll('.overlap-image');
+	const buttonRect = button.getBoundingClientRect();
+	
+	images.forEach(function(image) {
+	  const imageRect = image.getBoundingClientRect();
+	  if (buttonRect.top < imageRect.bottom && buttonRect.bottom > imageRect.top) {
+		button.classList.add('transparent');
+	  } else {
+		button.classList.remove('transparent');
+	  }
+	});
+  });
+  
+  
   
