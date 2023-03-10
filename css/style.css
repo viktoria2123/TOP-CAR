@@ -445,6 +445,8 @@ footer {
 #home h1 {
   color: #e44c65;
   font-size: 70px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 #home .col-md-8 {
