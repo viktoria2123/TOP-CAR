@@ -608,7 +608,11 @@ footer {
     Galllery section              
 -----------------------------------------*/
 
-#gallery,
+
+#gallery {
+  background: #ffffff;
+  margin-top: -5px;
+}
 #gallery2 {
   background: #ffffff;
   margin-top: -5px;
