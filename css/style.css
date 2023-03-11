@@ -24,7 +24,7 @@ body {
 
 html {
   font-size: 100%;
-  
+
 }
 
 
@@ -49,13 +49,12 @@ h1 {
   margin-bottom: 10px;
 }
 
-.gal2-title, .gal2-text {
+.gal2-title,
+.gal2-text {
   text-align: center;
 }
 
-.gal2-text {
-  
-}
+.gal2-text {}
 
 h2 {
   color: #e44c65;
@@ -161,7 +160,7 @@ a:focus {
   padding-top: 60px;
   /* padding-bottom: 120px; */
   position: relative;
-  
+
 }
 
 #gallery,
@@ -383,6 +382,43 @@ footer {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   opacity: 0.5;
+  animation: shake 3s ease-in-out 10s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5px, 0);
+  }
+  20% {
+    transform: translate(5px, 0);
+  }
+  30% {
+    transform: translate(-5px, 0);
+  }
+  40% {
+    transform: translate(5px, 0);
+  }
+  50% {
+    transform: translate(-5px, 0);
+  }
+  60% {
+    transform: translate(5px, 0);
+  }
+  70% {
+    transform: translate(-5px, 0);
+  }
+  80% {
+    transform: translate(5px, 0);
+  }
+  90% {
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /* Для экранов шириной меньше 768px */
@@ -406,6 +442,7 @@ footer {
     font-size: 16px;
   }
 }
+
 @media (max-width: 768px) {
   .call-btn-mobile {
     opacity: 0.8;
@@ -419,6 +456,7 @@ footer {
   color: white;
   opacity: 1;
 }
+
 .call-btn.transparent {
   opacity: 0.7;
 }
@@ -675,6 +713,7 @@ footer {
   background: #ffffff;
   margin-top: -5px;
 }
+
 #gallery2 {
   background: #ffffff;
   margin-top: -5px;
