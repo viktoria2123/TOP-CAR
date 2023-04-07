@@ -54,7 +54,9 @@ h1 {
   text-align: center;
 }
 
-.gal2-text {}
+.gal2-text {
+  font-weight: 600;
+}
 
 h2 {
   color: #e44c65;
